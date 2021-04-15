@@ -13,7 +13,7 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final titleStars = Container(
-        margin: EdgeInsets.only(top: 315.0),
+        margin: EdgeInsets.only(top: 335.0),
         child: Row(
           children: [
             Container(

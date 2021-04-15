@@ -8,16 +8,18 @@ import 'search_trips.dart';
 class TripsCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         bottomNavigationBar: CupertinoTabScaffold(
       tabBar: CupertinoTabBar(items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.indigo), title: Text("")),
+          icon: Icon(Icons.home, color: Colors.indigo),
+        ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.search, color: Colors.indigo), title: Text("")),
+          icon: Icon(Icons.search, color: Colors.indigo),
+        ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.person, color: Colors.indigo), title: Text("")),
+          icon: Icon(Icons.person, color: Colors.indigo),
+        ),
       ]),
       tabBuilder: (BuildContext context, int index) {
         switch (index) {
@@ -37,6 +39,7 @@ class TripsCupertino extends StatelessWidget {
             );
             break;
         }
+        return Container();
       },
     ));
   }
